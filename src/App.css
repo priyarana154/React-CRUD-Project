@@ -1,0 +1,192 @@
+/* src/App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: #111827;
+}
+
+.header p {
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+/* FORM */
+
+.form-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+.form-box input {
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-box input:focus {
+  border-color: #2563eb;
+}
+
+.add-btn,
+.update-btn {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn {
+  background: #16a34a;
+}
+
+.add-btn:hover {
+  background: #15803d;
+}
+
+.update-btn {
+  background: #ea580c;
+}
+
+.update-btn:hover {
+  background: #c2410c;
+}
+
+/* STUDENT LIST */
+
+.student-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+
+.student-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-circle {
+  width: 65px;
+  height: 65px;
+  background: #2563eb;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  font-size: 28px;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+.student-card h2 {
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.student-card p {
+  margin-bottom: 10px;
+  color: #4b5563;
+}
+
+.student-card span {
+  font-weight: bold;
+  color: #111827;
+}
+
+/* BUTTONS */
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background: #2563eb;
+}
+
+.edit-btn:hover {
+  background: #1d4ed8;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+/* EMPTY */
+
+.empty-box {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  grid-column: 1/-1;
+}
